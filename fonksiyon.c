@@ -81,7 +81,7 @@ void uygunAraclariListele() {
 
 // kiralamaGecmisiKaydet fonksiyonu, kiralanmış araçların kiralama geçmişini bir dosyaya kaydeden fonksiyondur.
 void kiralamaGecmisiKaydet() {
-    FILE *dosya = fopen(DOSYA_ADI, "w");
+    FILE *dosya = fopen(DOSYA_ADI, "a");
     if (dosya == NULL) {
         printf("Dosya acilamadi!\n");
         return;
