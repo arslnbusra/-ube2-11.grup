@@ -19,7 +19,7 @@ int aracSayisi = 0;
 
 /*kiralanacak araçları ekleme fonksiyonu
     bu fonksiyon, araç bilgilerini içeren bir struct Arac türünden nesne eklemek için kullanılır.*/
-void aracEkle(int aracID,const char* marka, const char* model) {
+void aracEkle(int aracID, char* marka, char* model) {
     if (aracSayisi < MAX_ARAC_SAYISI) {
         struct Arac yeniArac = {aracID};
         strcpy(yeniArac.marka, marka);
